@@ -1,0 +1,23 @@
+meta {
+  name: actualizar curso 2
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/curso/actualizar/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "pikachu",
+    "equivalencia": "AEA"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
